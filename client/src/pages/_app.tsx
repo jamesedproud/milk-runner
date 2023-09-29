@@ -3,7 +3,10 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Signika } from "next/font/google";
 
-const signika = Signika({ subsets: ["latin"], weight: ["400", "500", "600"] });
+const signika = Signika({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

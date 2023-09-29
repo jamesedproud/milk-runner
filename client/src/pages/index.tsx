@@ -5,6 +5,7 @@ import ProductCard from "@/components/ProductCard";
 import { TopNav } from "@/components/TopNav";
 import { BreadcrumbBar } from "@/components/BreadcrumbBar";
 import { Button } from "@/components/Button";
+import { TopBar } from "@/components/TopBar";
 
 const signika = Signika({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
@@ -21,9 +22,8 @@ interface Product {
 export default function Home() {
   return (
     <>
+      <TopBar />
       <TopNav />
-      <BreadcrumbBar path={["Home"]} />
-
       <div className="bg-[#f0f5f8] h-screen pl-10 pr-10 pt-10">Home</div>
     </>
   );

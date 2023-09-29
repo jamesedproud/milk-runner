@@ -5,6 +5,7 @@ type Product = {
   title: string;
   description: string;
   price: number;
+  imgpath: string;
 };
 
 type ProductCardProps = {
@@ -13,19 +14,19 @@ type ProductCardProps = {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div className="max-w-md bg-white rounded-lg my-4 mx-4 p-2 hover:shadow-lg  hover:shadow-gray-300 hover:cursor-pointer">
-      <div>
+    <div className="bg-white rounded-2xl p-1 hover:shadow-lg hover:shadow-gray-300 hover:cursor-pointer">
+      <div className="mb-2 p-1 flex justify-center items-center">
         <Image
-          className="rounded-lg"
-          src={"/3.jpeg"}
-          width={150}
-          height={150}
+          className="rounded-2xl"
+          src={"/productImages/" + product.imgpath}
+          width={170}
+          height={200}
           alt={product.title}
         />
       </div>
-      <div className="text-center mt-2">
+      <div className="text-center">
         <p className="font-bold">{product.title}</p>
-        <h3>¥{Math.round(product.price)}</h3>
+        <h3 className="font-light">¥{Math.round(product.price)}</h3>
       </div>
     </div>
   );

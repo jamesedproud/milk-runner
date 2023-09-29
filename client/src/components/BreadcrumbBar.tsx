@@ -10,12 +10,15 @@ export function BreadcrumbBar({ path }: { path: string[] }) {
               {index < path.length - 1 ? (
                 <>
                   {item === "Home" ? (
-                    <Link className="text-blue-900" href="/">
+                    <Link
+                      className="text-blue-900 hover:text-blue-700"
+                      href="/"
+                    >
                       {item}
                     </Link>
                   ) : (
                     <Link
-                      className="text-blue-900"
+                      className="text-blue-900 hover:text-blue-700"
                       href={`/${item.toLowerCase()}`}
                     >
                       {item}
