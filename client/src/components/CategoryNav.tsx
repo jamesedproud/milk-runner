@@ -12,7 +12,6 @@ const categories = [
 
 export default function CategoryNav() {
   const router = useRouter();
-  const { id: currentCategoryId } = router.query;
   const currentRoute = router.asPath;
 
   return (

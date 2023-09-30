@@ -11,13 +11,13 @@ import CategoryNav from "@/components/CategoryNav";
 const baseURL = "http://127.0.0.1:8080/";
 const route = "products";
 
-interface Product {
+type Product = {
   id: number;
   title: string;
   description: string;
   price: number;
   imgpath: string;
-}
+};
 
 export default function Products() {
   const [product, setProduct] = useState<Product[] | null>(null);
@@ -71,7 +71,7 @@ export default function Products() {
           {isLoading ? (
             <p>Loading...</p>
           ) : product ? (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-5 pr-7">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5 pr-7">
               {product.map((productItem) => (
                 <ProductCard key={productItem.id} product={productItem} />
               ))}

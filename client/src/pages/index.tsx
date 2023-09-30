@@ -12,12 +12,12 @@ const signika = Signika({ subsets: ["latin"], weight: ["400", "500", "600"] });
 const baseURL = "http://127.0.0.1:8080/";
 const route = "products";
 
-interface Product {
+type Product = {
   id: number;
   title: string;
   description: string;
   price: number;
-}
+};
 
 export default function Home() {
   return (
