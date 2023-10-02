@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>The Milk Runner</title>
         <meta name="description" content="Fresh Milk From Home to Farm" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <main className={signika.className}>
         <div className="container flex items-start">

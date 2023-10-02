@@ -7,6 +7,7 @@ import { Button } from "@/components/Button";
 import { TopBar } from "@/components/TopBar";
 import Link from "next/link";
 import CategoryNav from "@/components/CategoryNav";
+import { Footer } from "@/components/Footer";
 
 const baseURL = "http://127.0.0.1:8080/";
 const route = "products";
@@ -66,7 +67,7 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-center mt-5">
           <CategoryNav />
           {isLoading ? (
             <p>Loading...</p>
@@ -79,6 +80,7 @@ export default function Products() {
           ) : null}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

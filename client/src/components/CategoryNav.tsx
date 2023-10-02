@@ -22,7 +22,7 @@ export default function CategoryNav() {
           {categories.map((category) => (
             <li
               key={category.name}
-              className={`rounded-2xl p-1 my-1 ${
+              className={`rounded-2xl p-1 my-1 text-lg ${
                 currentRoute.includes(`/products/category/${category.id}`)
                   ? "bg-white"
                   : ""

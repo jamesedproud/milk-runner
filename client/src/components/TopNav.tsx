@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function TopNav() {
   return (
-    <header className="sticky top-[40px] z-10  bg-white h-[100px] w-screen pl-10 flex items-center ">
+    <header className="sticky top-[40px] z-10  bg-white h-[80px] w-screen pl-10 flex items-center ">
       <Link href={"/"}>
         <div className="flex items-center">
-          <Image src={"/logo.png"} width={40} height={40} alt="Logo" />
+          <Image src={"/logo.png"} width={35} height={35} alt="Logo" />
           <h1 className="pl-5 mb-2 text-2xl font-extrabold pt-2">
             The Milk Runner
           </h1>

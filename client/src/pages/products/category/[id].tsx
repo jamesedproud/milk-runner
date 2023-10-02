@@ -59,10 +59,10 @@ const CategoryPage = () => {
           </p>
         </div>
 
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-center mt-5">
           <CategoryNav />
           {product ? (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-5 pr-7">
+            <div className="ml-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-5 pr-7">
               {product.map((productItem) => (
                 <ProductCard key={productItem.id} product={productItem} />
               ))}
